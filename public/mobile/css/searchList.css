@@ -1,0 +1,90 @@
+.lt_view {
+  margin-top: 10px;
+  position: relative;
+  height: 100%;
+}
+.lt_view .search_form {
+  font-size: 0;
+  padding: 0 5px;
+}
+.lt_view .search_form form {
+  height: 30px;
+}
+.lt_view .search_form form .search_text {
+  float: left;
+  width: 80%;
+  padding: 0;
+  height: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  margin: 0;
+  border-color: #006699;
+  font-size: 14px;
+  text-indent: 10px;
+}
+.lt_view .search_form form .search_btn {
+  float: left;
+  width: 20%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  border: 0;
+  background-color: #02C1ED;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: #fff;
+}
+.lt_view .list_paixu {
+  margin-top: 10px;
+  padding: 5px 5px;
+  background-color: #9acfea;
+  font-size: 12px;
+}
+.lt_view .list_paixu a {
+  display: block;
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+.lt_view .list_paixu a span {
+  font-size: 12px;
+}
+.lt_view .list_paixu a.active {
+  color: orange;
+}
+.lt_view .lt_product_list {
+  padding-bottom: 45px;
+}
+.lt_view .lt_product_list .product_item {
+  width: 50%;
+  float: left;
+  padding: 5px;
+  text-align: center;
+}
+.lt_view .lt_product_list .product_item .product_in_item {
+  border: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.lt_view .lt_product_list .product_item .product_in_item img {
+  display: block;
+  width: 100%;
+}
+.lt_view .lt_product_list .product_item .product_in_item p.pro_info {
+  padding: 0 10px;
+  height: 40px;
+  overflow: hidden;
+  text-align: left;
+}
+.lt_view .lt_product_list .product_item .product_in_item p.pro_price {
+  font-size: 12px;
+}
+.lt_view .lt_product_list .product_item .product_in_item p.pro_price .new_price {
+  color: red;
+}
+.lt_view .lt_product_list .product_item .product_in_item p.pro_price .old_price {
+  color: #888888;
+  /* 中划线 */
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=searchList.css.map */

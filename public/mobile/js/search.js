@@ -41,6 +41,8 @@ $(function () {
 
         arr.unshift(val);
         ls.setItem("search_history",JSON.stringify(arr));
+        alert(1);
+        window.location.href="searchList.html?key="+val;
     })
 
     $(".clear_historys").on("tap",function () {
