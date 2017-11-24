@@ -11,7 +11,7 @@ $(function(){
         price: "",
         num: "",
         page: 1,
-        pageSize: 2
+        pageSize: 4
     };
     queryObj.proName=getURLParams("key");
     mui.init({
@@ -86,18 +86,18 @@ $(function(){
 
 
     $(".search_btn").on("tap",function () {
-        var val = $(".search_text").val();
-        if (!$.trim(val)) {
-            mui.toast("请输入关键字");
-            console.log(1);
-        } else{
+        var val = $.trim($(".search_text").val());
+        if (val) {
             // console.log(1);
-            queryObj.pageSize = 2;
+            queryObj.pageSize = 4;
             queryObj.page = 1;
             queryObj.proName = val;
-            console.log(queryObj.pageSize);
-            console.log(queryObj.page);
+            // console.log(queryObj.pageSize);
+            // console.log(queryObj.page);
             mui("#refreshContainer").pullRefresh().pulldownLoading();
+        } else{
+            mui.toast("请输入关键字");
+            console.log(1);
         }
     })
 
